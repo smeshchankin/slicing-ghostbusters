@@ -2,3 +2,24 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #363636;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 35px 0;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #5671F6;
+
+    align-items: center;
+    text-align: center;
+    padding: 0 1.1em;
+
+    border-right: 1px solid #D4D4D4;
+}
