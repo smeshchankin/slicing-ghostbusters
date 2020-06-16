@@ -48,3 +48,25 @@ body {
     text-decoration: none;
     color: #363636;
 }
+
+.buttons-group {
+    height: 100%;
+}
+.buttons-group > .button {
+    border: none;
+    height: 100%;
+    width: 160px;
+
+    cursor: pointer;
+}
+.buttons-group > .button:first-child {
+    border-left: 1px solid #D4D4D4;
+}
+.sign-up {
+    background-color: #fff;
+    color: #5671F6;
+}
+.log-in {
+    background-color: #5671F6;
+    color: #fff;
+}
