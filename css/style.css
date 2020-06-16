@@ -34,6 +34,7 @@ body {
 .search-input {
     border: none;
     padding-left: 38px;
+    margin-left: 34px;
 
     color: #A5A5A5;
 
@@ -42,6 +43,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.navigation {
+    margin-left: auto;
+    margin-right: 44px;
+}
 .navigation-link {
     margin-right: 18px;
 
