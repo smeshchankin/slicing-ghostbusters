@@ -8,7 +8,8 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    padding: 35px 0;
+    padding: 35px 0 35px 35px;
+    border-bottom: 1px solid #D4D4D4;
 }
 
 .logo {
@@ -19,7 +20,19 @@ body {
 
     align-items: center;
     text-align: center;
-    padding: 0 1.1em;
 
     border-right: 1px solid #D4D4D4;
+}
+
+.search-input {
+    border: none;
+    padding-left: 38px;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+
+    background-image: url(../img/search-icon.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
 }
