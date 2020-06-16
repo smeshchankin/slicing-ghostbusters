@@ -5,11 +5,14 @@ body {
 }
 
 .header {
+    font-size: 18px;
+    line-height: 21px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 35px 0 35px 35px;
+    height: 105px;
     border-bottom: 1px solid #D4D4D4;
 }
 
@@ -19,6 +22,9 @@ body {
     line-height: 35px;
     color: #5671F6;
 
+    padding: 0 35px;
+    height: 100%;
+    display: flex;
     align-items: center;
     text-align: center;
 
@@ -29,8 +35,6 @@ body {
     border: none;
     padding-left: 38px;
 
-    font-size: 18px;
-    line-height: 21px;
     color: #A5A5A5;
 
     background-image: url(../img/search-icon.svg);
@@ -42,7 +46,5 @@ body {
     margin-right: 18px;
 
     text-decoration: none;
-    font-size: 18px;
-    line-height: 21px;
     color: #363636;
 }
