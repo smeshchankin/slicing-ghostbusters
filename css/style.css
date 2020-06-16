@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: #363636;
 }
 
@@ -35,4 +36,13 @@ body {
     background-image: url(../img/search-icon.svg);
     background-position: center left;
     background-repeat: no-repeat;
+}
+
+.navigation-link {
+    margin-right: 18px;
+
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+    color: #363636;
 }
