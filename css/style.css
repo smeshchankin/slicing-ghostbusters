@@ -73,6 +73,7 @@ body {
 }
 
 .buttons-group {
+    display: flex;
     height: 100%;
 }
 .buttons-group > .button {
