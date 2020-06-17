@@ -47,13 +47,24 @@ body {
     margin-right: 44px;
 }
 .navigation-link {
+    position: relative;
     margin-right: 18px;
 
     text-decoration: none;
     color: #363636;
 }
-.navigation-link:hover {
-    font-weight: 900;
+.navigation-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.2s;
+}
+.navigation-link:hover:after {
+    width: 100%;
 }
 
 .buttons-group {
