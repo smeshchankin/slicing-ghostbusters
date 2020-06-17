@@ -15,7 +15,11 @@ body {
     border-bottom: 1px solid #D4D4D4;
 }
 .header-logo {
+    display: block;
+    height: 100%;
+
     text-decoration: none;
+    border-right: 1px solid #D4D4D4;
 }
 .logo {
     font-weight: 900;
@@ -28,8 +32,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-
-    border-right: 1px solid #D4D4D4;
 }
 
 .search-input {
