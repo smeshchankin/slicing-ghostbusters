@@ -14,7 +14,9 @@ body {
     height: 105px;
     border-bottom: 1px solid #D4D4D4;
 }
-
+.header-logo {
+    text-decoration: none;
+}
 .logo {
     font-weight: 900;
     font-size: 30px;
