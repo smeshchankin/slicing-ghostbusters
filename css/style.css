@@ -109,6 +109,7 @@ body {
 .film-trailer {
     display: flex;
     flex-direction: column;
+    margin-right: 60px;
 }
 .poster {
     width: 358px;
@@ -129,4 +130,26 @@ body {
 }
 .trailer-button-icon {
     margin-right: 14px;
+}
+
+.film-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+.film-subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+}
+.film-description {
+    max-width: 514px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+
+    font-size: 14px;
+    line-height: 150%;
+    color: #000;
 }
