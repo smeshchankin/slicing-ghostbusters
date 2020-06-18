@@ -94,3 +94,15 @@ body {
     background-color: #5671F6;
     color: #fff;
 }
+
+.film {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.container {
+    max-width: 1130px;
+    margin: auto;
+}
+.film-wrapper {
+    display: flex;
+}
