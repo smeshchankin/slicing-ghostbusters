@@ -117,6 +117,9 @@ body {
     border-top-right-radius: 5px;
 }
 .trailer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     border: 1px solid #D4D4D4;
     border-radius: 0px 0px 5px 5px;
@@ -126,8 +129,4 @@ body {
 }
 .trailer-button-icon {
     margin-right: 14px;
-}
-.trailer-button-icon,
-.trailer-button-text {
-    vertical-align: middle;
 }
