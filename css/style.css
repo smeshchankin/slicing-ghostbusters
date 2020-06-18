@@ -221,6 +221,8 @@ body {
 .tabs {
     display: flex;
     align-items: center;
+
+    margin-bottom: 60px;
 }
 .section-title {
     margin-right: 30px;
@@ -233,3 +235,4 @@ body {
     font-weight: 900;
     color: #363636;
 }
+
