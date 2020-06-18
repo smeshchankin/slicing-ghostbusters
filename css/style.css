@@ -213,3 +213,23 @@ body {
 .rating-value {
     font-weight: bold;
 }
+
+.cast {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+}
+.section-title {
+    margin-right: 30px;
+
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+}
+.section-title.active {
+    font-weight: 900;
+    color: #363636;
+}
