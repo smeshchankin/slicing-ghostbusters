@@ -106,3 +106,28 @@ body {
 .film-wrapper {
     display: flex;
 }
+.film-trailer {
+    display: flex;
+    flex-direction: column;
+}
+.poster {
+    width: 358px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.trailer-button {
+    background-color: #fff;
+    border: 1px solid #D4D4D4;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+.trailer-button-icon {
+    margin-right: 14px;
+}
+.trailer-button-icon,
+.trailer-button-text {
+    vertical-align: middle;
+}
