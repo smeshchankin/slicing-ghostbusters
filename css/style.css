@@ -97,7 +97,26 @@ body {
     background-color: #5671F6;
     color: #fff;
 }
+.mobile-buttons {
+    /* display: none; */
+}
+.mobile-menu-button {
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.menu-line {
+    display: block;
+    flex-basis: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 40px;
+}
 .film {
     padding-top: 80px;
     padding-bottom: 80px;
