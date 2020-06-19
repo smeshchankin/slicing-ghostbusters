@@ -327,3 +327,40 @@ body {
         width: 140px;
     }
 }
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 760px;
+    }
+    .navigation {
+        display: none;
+    }
+    .search-input {
+        margin-right: auto;
+    }
+    .film-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .film-description {
+        margin-top: 20px;
+    }
+    .film-description,
+    .film-properties {
+        margin-bottom: 30px;
+    }
+    .film-property {
+        flex-flow: column;
+    }
+    .card {
+        flex-basis: 50%;
+    }
+    .card-image {
+        width: 100px;
+        height: 100px;
+    }
+    .news-card {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+}
