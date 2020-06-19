@@ -97,9 +97,11 @@ body {
     background-color: #5671F6;
     color: #fff;
 }
+
 .mobile-buttons {
-    /* display: none; */
+    display: none;
 }
+.search-button,
 .mobile-menu-button {
     padding: 5px;
     background-color: #fff;
@@ -109,14 +111,15 @@ body {
 .menu-line {
     display: block;
     flex-basis: 16px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 
     width: 16px;
     height: 2px;
     background-color: #000;
     border-radius: 40px;
 }
+
 .film {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -390,6 +393,15 @@ body {
     }
     .header {
         height: 80px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .search-input,
+    .buttons-group {
+        display: none;
+    }
+    .mobile-buttons {
+        display: block;
     }
     .film {
         padding-top: 50px;
@@ -405,5 +417,22 @@ body {
     .cast, .news {
         padding-top: 50px;
         padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    
+    .header-logo {
+        border-right: none;
+    }
+    .film-trailer, .poster {
+        width: 100%;
+    }
+    .film-info {
+        order: 1;
+        margin-bottom: 0;
     }
 }
