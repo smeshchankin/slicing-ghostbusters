@@ -424,7 +424,6 @@ body {
     .container {
         width: 95%;
     }
-    
     .header-logo {
         border-right: none;
     }
@@ -433,6 +432,47 @@ body {
     }
     .film-info {
         order: 1;
-        margin-bottom: 0;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .film-title {
+        margin-bottom: 12px;
+
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .film-subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        color: #A5A5A5;
+    }
+    .film-description {
+        margin-top: 26px;
+        margin-bottom: 40px;
+
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .film-property {
+        width: 100%;
+        flex-flow: row;
+    }
+    .card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .card-image {
+        width: 60px;
+        height: 60px;
+    }
+    .tabs {
+        margin-bottom: 35px;
+    }
+    .cast {
+        padding-bottom: 50px;
+    }
+    .news-card {
+        flex-basis: 100%;
     }
 }
