@@ -267,3 +267,34 @@ body {
     margin-top: 0;
     margin-bottom: 6px;
 }
+
+.news {
+    background-color: #F3F3F3;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.section-news-title {
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 65px;
+}
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.news-card {
+    flex-basis: 23%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.news-title {
+    margin-top: 14px;
+
+    font-weight: 900;
+}
