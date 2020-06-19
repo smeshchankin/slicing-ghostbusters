@@ -364,3 +364,27 @@ body {
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        height: 80px;
+    }
+    .film {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .film-wrapper {
+        flex-wrap: wrap;
+    }
+    .film-info {
+        margin-bottom: 30px;
+        order: -1;
+    }
+    .cast, .news {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+}
