@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ghostbusters: Afterlife</title>
@@ -42,10 +43,13 @@
             <div class="film-wrapper">
                 <div class="film-trailer">
                     <img src="img/poster.jpg" alt="Poster" class="poster" />
-                    <button class="trailer-button">
+                    <a data-fancybox
+                    href="https://youtube.com/watch?v=ahZFCF--uRY"
+                        class="trailer-button"
+                    >
                         <img src="img/play.svg" alt="Play" class="trailer-button-icon" />
                         <span class="trailer-button-text">Watch trailer</span>
-                    </button>
+                </a>
                 </div>
                 <div class="film-info">
                     <h1 class="film-title">Ghostbusters: Afterlife</h1>
@@ -191,6 +195,9 @@
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>

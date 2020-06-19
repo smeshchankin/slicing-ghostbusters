@@ -153,6 +153,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     cursor: pointer;
+    text-decoration: none;
 }
 .trailer-button-icon {
     margin-right: 14px;
