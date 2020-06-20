@@ -5,6 +5,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #363636;
 }
+.no-scroll {
+    overflow: hidden;
+}
 
 .header {
     font-size: 18px;
@@ -404,11 +407,12 @@ body {
         padding-right: 2.5%;
     }
     .mobile-menu {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
 
+        height: calc(100% - 65px);
         position: fixed;
         top: 65px;
         right: 0;
@@ -416,6 +420,9 @@ body {
         left: 0;
 
         background-color: #5671f6;
+    }
+    .mobile-menu.active {
+        display: flex;
     }
     .navigation {
         display: flex;
@@ -455,6 +462,7 @@ body {
     }
     .mobile-buttons {
         display: block;
+        margin-left: auto;
     }
     .film {
         padding-top: 50px;
