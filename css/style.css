@@ -330,6 +330,17 @@ body {
 
     font-weight: 900;
 }
+.button-next {
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    cursor: pointer;
+}
 
 @media (max-width: 1200px) {
     .container {
@@ -478,6 +489,12 @@ body {
     .cast, .news {
         padding-top: 50px;
         padding-bottom: 70px;
+    }
+    .news-card {
+        max-width: 90%;
+    }
+    .button-next {
+        display: block;
     }
 }
 
