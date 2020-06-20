@@ -268,11 +268,18 @@ body {
     color: #363636;
 }
 
+.tab {
+    cursor: pointer;
+}
 .tab-content {
-    display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
 }
+.tab-content.visible {
+    display: flex;
+}
+
 .card {
     display: flex;
     flex-basis: 25%;

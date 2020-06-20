@@ -1,9 +1,20 @@
 $(document).ready(function () {
     const mobileMenuButton = $('.mobile-menu-button');
     const mobileMenu = $('.mobile-menu');
+    const tabs = $('.tab');
+
     mobileMenuButton.on('click', function() {
         mobileMenu.toggleClass('active');
         $('body').toggleClass('no-scroll');
+    });
+
+    tabs.on('click', function() {
+        tabs.removeClass('active');
+        $(this).toggleClass('active');
+
+        const activeTabContent = $(this).attr('data-target');
+        $('.tab-content').removeClass('visible');
+        $(activeTabContent).toggleClass('visible');
     });
 
     new Swiper('.swiper-container', {
