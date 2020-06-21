@@ -1,0 +1,42 @@
+[
+    {
+        "img": "img/actors/1.png",
+        "name": "Carrie Coon",
+        "fullname": "Carrie Alexandra Coon"
+    },
+    {
+        "img": "img/actors/2.png",
+        "name": "Bill Murray",
+        "fullname": "William James Murray"
+    },
+    {
+        "img": "img/actors/3.png",
+        "name": "Paul Rudd",
+        "fullname": "Paul Stephen Rudd"
+    },
+    {
+        "img": "img/actors/4.png",
+        "name": "Annie Potts",
+        "fullname": "Anne Hampton Potts"
+    },
+    {
+        "img": "img/actors/5.png",
+        "name": "Mckenna Grace",
+        "fullname": "Mckenna Grace"
+    },
+    {
+        "img": "img/actors/6.jpg",
+        "name": "Dan Aykroyd",
+        "fullname": "Daniel Edward Aykroyd"
+    },
+    {
+        "img": "img/actors/7.png",
+        "name": "Ernie Hudson",
+        "fullname": "Earnest Lee Hudson"
+    },
+    {
+        "img": "img/actors/8.png",
+        "name": "Finn Wolfhard",
+        "fullname": "Finn Wolfhard"
+    }
+]
