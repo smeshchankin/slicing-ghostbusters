@@ -1,14 +1,14 @@
-function Poputator() {
+function Populator() {
 }
 
-Poputator.prototype.populate = function() {
-    const templates = document.querySelectorAll('[data-file]');
-    templates.forEach(function(element) {
+Populator.prototype.populate = async function() {
+    const templates = toArray(document.querySelectorAll('[data-file]'));
+    const promises = templates.map(async function(element) {
         let parent = element.parentElement;
         let next = element.nextElementSibling;
-
         const path = element.dataset.file;
-        getData(path).then(function(data) {
+
+        return getData(path).then(function(data) {
             data.forEach(function(row) {
                 let component = element.cloneNode(true);
                 component = fillComponent(component, row);
@@ -17,7 +17,10 @@ Poputator.prototype.populate = function() {
 
             parent.removeChild(element);
         });
+
     });
+
+    return Promise.all(promises);
 
     async function getData(url) {
         const response = await fetch(url);
@@ -25,6 +28,14 @@ Poputator.prototype.populate = function() {
             throw new Error(`Can\'t read data from ${url}. Status code: ${response.status}`);
         }
         return await response.json();
+    }
+
+    function toArray(obj) {
+        const array = [];
+        for (let i = 0; i < obj.length; ++i) {
+            array.push(obj[i]);
+        }
+        return array;
     }
 
     function fill(str, name, value) {
