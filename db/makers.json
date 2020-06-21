@@ -1,0 +1,17 @@
+[
+    {
+        "img": "img/actors/1.png",
+        "name": "Carrie Coon",
+        "fullname": "Carrie Alexandra Coon"
+    },
+    {
+        "img": "img/actors/2.png",
+        "name": "Bill Murray",
+        "fullname": "William James Murray"
+    },
+    {
+        "img": "img/actors/3.png",
+        "name": "Paul Rudd",
+        "fullname": "Paul Stephen Rudd"
+    }
+]
