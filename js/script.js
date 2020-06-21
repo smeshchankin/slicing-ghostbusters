@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    new Poputator().populate();
+
     const mobileMenuButton = $('.mobile-menu-button');
     const mobileMenu = $('.mobile-menu');
     const tabs = $('.tab');
