@@ -15,7 +15,7 @@ Poputator.prototype.populate = function() {
                 parent.insertBefore(component, next);
             });
 
-            element.style.display = 'none';
+            parent.removeChild(element);
         });
     });
 
