@@ -75,3 +75,15 @@ Populator.prototype.copy = function() {
         }
     });
 };
+
+Populator.prototype.clone = function() {
+    const templates = document.querySelectorAll('[data-clone]');
+    templates.forEach(function(element) {
+        let parent = element.parentElement;
+        const id = element.dataset.clone;
+        const source = document.getElementById(id);
+        let component = source.cloneNode(true);
+
+        parent.replaceChild(component, element);
+    });
+};

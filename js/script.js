@@ -2,6 +2,7 @@ $(document).ready(function () {
     const p = new Populator();
     p.populate()
         .then(p.copy())
+        .then(p.clone())
         .then(init);
 
     function init() {
