@@ -20,7 +20,15 @@ Populator.prototype.populate = async function() {
 
     });
 
-    return Promise.all(promises);
+    return Promise.all(promises).then(processDataScr);
+
+    function processDataScr() {
+        const elements = toArray(document.querySelectorAll('[data-src]'));
+        elements.forEach(function(element) {
+            value = element.dataset.src;
+            element.setAttribute('src', value);
+        });
+    }
 
     async function getData(url) {
         const response = await fetch(url);
