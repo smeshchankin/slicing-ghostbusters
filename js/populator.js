@@ -52,7 +52,7 @@ Populator.prototype.populate = async function() {
     }
 
     function fillComponent(component, row) {
-        for (let idx = 0; idx < component.attributes.length; idx++) {
+        for (let idx = 0; idx < component.attributes.length; ++idx) {
             const attr = component.attributes[idx];
             attr.value = fillValue(attr.value, row);
         }
@@ -60,4 +60,18 @@ Populator.prototype.populate = async function() {
 
         return component;
     }
+};
+
+Populator.prototype.copy = function() {
+    const templates = document.querySelectorAll('[data-copy]');
+    templates.forEach(function(element) {
+        let parent = element.parentElement;
+        let next = element.nextElementSibling;
+        const count = element.dataset.copy;
+
+        for (let i = 0; i < count - 1; ++i) {
+            let component = element.cloneNode(true);
+            parent.insertBefore(component, next);
+        }
+    });
 };

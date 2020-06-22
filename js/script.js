@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    new Populator().populate().then(init);
+    const p = new Populator();
+    p.populate()
+        .then(p.copy())
+        .then(init);
 
     function init() {
         const mobileMenuButton = $('.mobile-menu-button');
