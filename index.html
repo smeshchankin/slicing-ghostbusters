@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ghostbusters: Afterlife</title>
-</head> 
+</head>
 <body>
     <header class="header">
         <a id="logo" href="#" class="header-logo">
@@ -42,12 +42,9 @@
     <section class="film">
         <div class="container">
             <div class="film-wrapper">
-                <div class="film-trailer">
-                    <img src="img/poster.jpg" alt="Poster" class="poster" />
-                    <a data-fancybox
-                        href="https://youtube.com/watch?v=ahZFCF--uRY"
-                        class="trailer-button"
-                    >
+                <div data-file="db/film.json" class="film-trailer">
+                    <img src="{{poster}}" alt="Poster" class="poster" />
+                    <a data-fancybox href="{{trailer}}" class="trailer-button">
                         <img src="img/play.svg" alt="Play" class="trailer-button-icon" />
                         <span class="trailer-button-text">Watch trailer</span>
                 </a>

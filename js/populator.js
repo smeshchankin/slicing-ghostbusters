@@ -9,13 +9,17 @@ Populator.prototype.populate = async function() {
         const path = element.dataset.file;
 
         return getData(path).then(function(data) {
-            data.forEach(function(row) {
-                let component = element.cloneNode(true);
-                component = fillComponent(component, row);
-                parent.insertBefore(component, next);
-            });
+            if (Array.isArray(data)) {
+                data.forEach(function(row) {
+                    let component = element.cloneNode(true);
+                    component = fillComponent(component, row);
+                    parent.insertBefore(component, next);
+                });
 
-            parent.removeChild(element);
+                parent.removeChild(element);
+            } else {
+                fillComponent(element, data);
+            }
         });
 
     });
