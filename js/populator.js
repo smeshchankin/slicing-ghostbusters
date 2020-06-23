@@ -99,3 +99,25 @@ Populator.prototype.clone = function() {
         parent.replaceChild(component, element);
     });
 };
+
+Populator.prototype.tabs = function() {
+    const groups = document.querySelectorAll('[data-tabs]');
+    groups.forEach(function(group) {
+        const tabs = group.querySelectorAll('[data-tab]');
+
+        tabs.forEach(function(tab) {
+            tab.onclick = function(event) {
+                for (let i = 0; i < tabs.length; ++i) {
+                    tabs[i].classList.remove('active');
+                    const selector = tabs[i].dataset.tab;
+                    const elem = document.querySelector(selector);
+                    elem.classList.remove('visible');
+                }
+                event.target.classList.add('active');
+                const selector = event.target.dataset.tab;
+                const elem = document.querySelector(selector);
+                elem.classList.add('visible');
+            };
+        });
+    });
+};
