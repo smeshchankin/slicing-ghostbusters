@@ -1,10 +1,5 @@
 $(document).ready(function () {
-    const p = new Populator();
-    p.populate()
-        .then(p.copy())
-        .then(p.clone())
-        .then(p.tabs())
-        .then(init);
+    new Populator().all().then(init);
 
     function init() {
         new Swiper('.swiper-container', {

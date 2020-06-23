@@ -121,3 +121,11 @@ Populator.prototype.tabs = function() {
         });
     });
 };
+
+Populator.prototype.all = function() {
+    const instance = this;
+    return instance.populate()
+        .then(instance.copy())
+        .then(instance.clone())
+        .then(instance.tabs());
+};
