@@ -1,5 +1,5 @@
 # Slicing Ghostbusters [2021]
-[Open GtHub Pages](http://smeshchankin.github.io/slicing-ghostbusters)
+[Open GitHub Pages](http://smeshchankin.github.io/slicing-ghostbusters)
 
 Slicing Ghostbusters Movie [2021]
 
